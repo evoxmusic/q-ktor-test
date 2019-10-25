@@ -5,5 +5,9 @@ type: java:8
 relationships:
   database:  "my-redis:redis"
 
-
 disk: 512
+
+# The configuration of app when it is exposed to the web.
+web:
+  commands:
+    start: java -jar -Xmx512m target/ktor-test-0.1.jar --server.port=$PORT
