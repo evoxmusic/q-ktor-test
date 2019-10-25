@@ -1,8 +1,9 @@
 name: my-ktor
 
 type: java:8
-build:
-  flavor: composer
 
 relationships:
   database:  "my-redis:redis"
+
+
+disk: 512
